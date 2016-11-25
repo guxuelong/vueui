@@ -1,0 +1,33 @@
+@component-namespace m {
+  @b tab {
+    @e slot {
+      display: flex;
+    }
+    @e ft {
+      width: 100%;
+      height: var(--tab-line-height);
+      position: relative;
+      margin-top: calc(0px - var(--tab-line-height));
+    }
+    @e line {
+      position: absolute;
+      height: var(--tab-line-height);
+      bottom: 0;
+      background-color: var(--tab-line-select-color);
+      display: none;
+    }
+  }
+  @b tab-item {
+    flex-grow: 1;
+    text-align: center;
+    background-color: var(--tab-item-bgc);
+    position: relative;
+    @mixin borderBottom var(--tab-line-bgc);
+    &:after {
+      z-index: 0;
+    }
+  }
+}
+.m_item_select {
+  color: var(--tab-line-select-color);
+}

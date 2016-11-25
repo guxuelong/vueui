@@ -1,0 +1,25 @@
+@import "./common/var.css";
+
+input {
+  height: var(--input-height);
+  outline: none;
+  border: none;
+  vertical-align: top;
+  text-indent: var(--input-text-indent);
+  width: 100%;
+}
+.m-input {
+  font-size: var(--input-font-size);
+}
+.m-input__warpper {
+  flex-grow: 1;
+}
+.m-input__ft {
+  display: flex;
+  img {
+    height: 100%;
+  }
+}
+.m-input__ft--gray button{
+  color: var(--input-ft-gray);
+}

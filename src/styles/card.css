@@ -1,0 +1,16 @@
+@component-namespace m {
+  @b card {
+    width: var(--card-width);
+    background-color: var(--card-bgc);
+    margin: auto;
+    @e header {
+      position: relative;
+      padding: var(--card-header-padding);
+      box-sizing: border-box;
+      @mixin borderBottom var(--card-bb-color);
+    }
+    @e body {
+      padding: var(--card-body-padding);
+    }
+  }
+}

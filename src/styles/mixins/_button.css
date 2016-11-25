@@ -1,0 +1,26 @@
+@define-mixin button-style $bgc {
+  color: var(--color-white);
+  background-color: $bgc;
+  &:active:not(.disable) {
+    background-color: color($bgc alpha(0.7));
+  }
+  &:visited {
+    color: var(--color-white);
+  }
+  &.disable {
+    color: hsla(0,0%,100%,.6);
+  }
+}
+
+@define-mixin button-style--plain $color {
+  background-color: var(--color-white);
+  @mixin border-1px var(--button-large-border-radius) $color;
+  color: $color;
+  &:active:not(.disable) {
+    background-color: color($color alpha(0.7));
+    color: var(--color-white);
+  }
+  &:visited {
+    color: $color;
+  }
+}
