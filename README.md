@@ -1,6 +1,6 @@
-# myvue2
+# vueui
 
-> A Vue.js project
+> Vue.js 2.0 UI Components Library.
 
 ## Build Setup
 
