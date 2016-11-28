@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png" class="m-logo">
     <m-bottom></m-bottom>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MBottom from './components/MBottom'
+import MBottom from './components/MBottom/index.vue'
 
 export default {
   name: 'app',
@@ -34,6 +34,10 @@ html,body,p,input {
 }
 ul {
   list-style: none;
+}
+.m-logo {
+  display: block;
+  margin: auto;
 }
 #app {
   height: 100%;

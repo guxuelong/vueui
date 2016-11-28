@@ -3,7 +3,7 @@
     <div class="m-footer">
       <router-link to='/' >首页</router-link>
       <router-link to='/demolist' >演示</router-link>
-      <router-link to='/donate' >捐赠</router-link>
+      <router-link to='/about' >关于</router-link>
     </div>
   </div>
 </template>
@@ -47,6 +47,9 @@ a {
   background-color: #fff;
   z-index: 10;
   padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
   a {
     width: 30%;
     display: inline-block;

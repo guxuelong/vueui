@@ -1,3 +1,6 @@
+@import "./common/var.css";
+@import "./mixins/line.css";
+
 @component-namespace m {
   @b tab {
     @e slot {

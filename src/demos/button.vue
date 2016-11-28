@@ -28,7 +28,7 @@
   </div>
 </template>
 <script>
-import MButton from '../components/MButton'
+import MButton from '../components/MButton/index.vue'
 
 export default {
   components: {

@@ -19,9 +19,9 @@
   </div>
 </template>
 <script>
-import MInput from '../components/MInput'
-import MButton from '../components/MButton'
-import Group from '../components/Group'
+import MInput from '../components/MInput/index.vue'
+import MButton from '../components/MButton/index.vue'
+import Group from '../components/Group/index.vue'
 
 export default {
   components: {

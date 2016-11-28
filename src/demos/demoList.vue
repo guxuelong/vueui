@@ -31,8 +31,8 @@
   </div>
 </template>
 <script>
-import Group from '../components/Group.vue'
-import Cell from '../components/Cell.vue'
+import Group from '../components/Group/index.vue'
+import Cell from '../components/Cell/index.vue'
 
 export default {
   components: {
@@ -42,6 +42,6 @@ export default {
 }
 </script>
 <style>
-
+@import '../styles/demo/demo.css'
 </style>
 

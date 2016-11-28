@@ -1,3 +1,5 @@
+@import "./common/var.css";
+
 .m-button {
   margin: auto;
   height: var(--button-large-height);

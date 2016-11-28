@@ -13,7 +13,7 @@
 <script>
 import Tab from '../components/Tab/tab.vue'
 import TabItem from '../components/Tab/tab-item.vue'
-import Group from '../components/Group.vue'
+import Group from '../components/Group/index.vue'
 
 export default {
   components: {

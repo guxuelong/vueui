@@ -13,13 +13,7 @@
   --z-index-modal: 20;
   --z-index-alert: 30;
   /*button*/
-  /*
-    disable
-    size
-    type
-    plain
-    success/cancel/warn
-  */
+
   --button-large-width: 100%;
   --button-large-height: 88px;
   --button-submit-backgroundcolor: #E25241;

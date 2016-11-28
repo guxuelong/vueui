@@ -15,8 +15,8 @@
   </div>
 </template>
 <script>
-import Alert from '../components/Alert.vue'
-import MButton from '../components/MButton.vue'
+import Alert from '../components/Alert/index.vue'
+import MButton from '../components/MButton/index.vue'
 
 export default {
   components: {

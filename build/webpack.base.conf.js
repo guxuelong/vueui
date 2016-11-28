@@ -54,7 +54,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel',
+        loader: 'babel?presets[]=es2015',
         include: projectRoot,
         exclude: /node_modules/
       },

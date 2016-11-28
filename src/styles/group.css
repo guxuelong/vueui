@@ -1,3 +1,5 @@
+@import "./common/var.css";
+
 .m-group__title {
   padding-left: var(--group-title-left);
   font-size: var(--group-font-size);

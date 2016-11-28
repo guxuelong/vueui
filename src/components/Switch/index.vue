@@ -4,18 +4,23 @@
     </cell>
 </template>
 <script>
-import Cell from './Cell.vue'
+import Cell from '../Cell/index.vue'
 
 export default {
   components: {
     Cell
   },
   props: {
-    checked: {
+    checkedStatus: {
       type: Boolean,
       default: false
     },
     disabled: Boolean
+  },
+  data () {
+    return {
+      checked: this.checkedStatus
+    }
   }
 }
 </script>
