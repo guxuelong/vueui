@@ -3,6 +3,7 @@ var fs = require('fs')
 var webpack = require('webpack')
 var mkdirp = require('mkdirp')
 var postcss = require('postcss')
+var cssnano = require('cssnano')
 require('shelljs/global')
 function clearDist() {
   var distPath = path.resolve(__dirname, '../dist/')
@@ -38,7 +39,7 @@ function buildComponents(name) {
   webpack(_config, function () {
   })
 }
-//genComponents()
+genComponents()
 function genStyles() {
   var p = path.resolve(__dirname, '../src/styles/')
   var pathStyles = path.resolve(__dirname, '../dist/styles/')
@@ -50,7 +51,6 @@ function genStyles() {
     files.filter(function (file) {
       return fs.statSync(path.join(p, file)).isFile()
     }).forEach(function (file) {
-      console.log(file)
       buildStyles(file)
     })
   })
@@ -81,11 +81,12 @@ function buildStyles (file) {
         }
       }
     }),
+    require('postcss-discard-comments')({removeAll: true}),
+    cssnano({autoprefixer: false}),
     require('postcss-px2rem')({remUnit: 40})
   ])
   .process(code, {from: fromPath, to: toPath})
   .then(function (result) {
-    console.log(toPath)
     fs.writeFileSync(toPath, result.css)
   })
 }
@@ -94,6 +95,4 @@ function touchDir(filePath) {
   mkdirp(filePath, function () {
   })
 }
-var mypa = path.resolve(__dirname, '../dist/styles/')
-var mypath = path.resolve(__dirname, '../dist/styles/a.css')
-console.log(mypath)
+

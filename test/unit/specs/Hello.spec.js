@@ -1,3 +1,4 @@
+/*
 import Vue from 'vue'
 import Hello from 'src/components/Hello'
 
@@ -11,3 +12,4 @@ describe('Hello.vue', () => {
       .to.equal('Welcome to Your Vue.js App')
   })
 })
+*/

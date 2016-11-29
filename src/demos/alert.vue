@@ -4,13 +4,13 @@
       <m-button type="success" text="Alert 弹框" :plain="true"></m-button>
     </div>
     <div >
-      <alert :confirmFn="confirmFn" @on-confirm="onConfirm" @on-cancel="onCancel" :show="alertShow" :para="{content: '内容我是内容我是内容啦啦啦啦啦啦啦啦啦', title: '标题我是标题',type: 'alert'}"></alert>
+      <alert :para="paraObj" @on-cancel="onCancel"></alert>
     </div>
-    <div class="alert-button" @click="confirmFunc">
+    <div class="alert-button" @click="alertFunc1">
       <m-button type="success" text="Confirm 弹框" :plain="true"></m-button>
     </div>
     <div >
-      <alert :confirmFn="confirmFn" @on-confirm="onConfirm1" @on-cancel="onCancel1" :show="confirmShow" :para="{content: '内容我是内容我是内容啦啦啦啦啦啦啦啦啦', title: '标题我是标题',type: 'confirm'}"></alert>
+      <alert :para="paraObj1" @on-cancel="onCancel1"></alert>
     </div>
   </div>
 </template>
@@ -25,31 +25,44 @@ export default {
   },
   data () {
     return {
-      alertShow: false,
-      confirmShow: false
+      paraObj: {
+        content: '内容我是内容',
+        title: '标题我是标题',
+        type: 'alert',
+        confirm: '确定辣',
+        cancel: '取消辣',
+        close: true,
+        showStatus: false,
+        confirmHandler: function () {
+          window.alert('I am alert')
+        }
+      },
+      paraObj1: {
+        content: '内容我是第二个',
+        title: '标题我是标题啦啦',
+        type: 'confirm',
+        confirm: '',
+        cancel: '',
+        close: true,
+        showStatus: false,
+        confirmHandler: function () {
+          window.alert('I am confirm')
+        }
+      }
     }
   },
   methods: {
     alertFunc () {
-      this.alertShow = !this.alertShow
+      this.paraObj.showStatus = true
     },
-    confirmFunc () {
-      this.confirmShow = !this.confirmShow
+    alertFunc1 () {
+      this.paraObj1.showStatus = true
     },
     onCancel () {
-      this.alertShow = false
-    },
-    onConfirm () {
-      this.alertShow = false
+      this.paraObj.showStatus = false
     },
     onCancel1 () {
-      this.confirmShow = false
-    },
-    onConfirm1 () {
-      this.confirmShow = false
-    },
-    confirmFn () {
-      window.alert('hello')
+      this.paraObj1.showStatus = false
     }
   }
 }
