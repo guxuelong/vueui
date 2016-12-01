@@ -10,6 +10,7 @@ import Alert from './demos/alert.vue'
 import Switch from './demos/switch.vue'
 import Card from './demos/card.vue'
 import Tab from './demos/tab.vue'
+import Cell from './demos/cell.vue'
 
 const routes = [
   { path: '/', component: Index, name: 'index' },
@@ -20,7 +21,8 @@ const routes = [
   { path: '/demo/alert', component: Alert, name: 'alert' },
   { path: '/demo/switch', component: Switch, name: 'switch' },
   { path: '/demo/card', component: Card, name: 'card' },
-  { path: '/demo/tab', component: Tab, name: 'tab' }
+  { path: '/demo/tab', component: Tab, name: 'tab' },
+  { path: '/demo/cell', component: Cell, name: 'cell' }
 ]
 Vue.use(Router)
 
