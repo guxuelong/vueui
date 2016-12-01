@@ -5,6 +5,10 @@
         <i class="iconfont" slot="left-icon">&#xe62d;</i>
         <i class="iconfont" slot="right-icon">&#xe93d;</i>
       </cell>
+      <cell url="/about" title="about">
+        <i class="iconfont" slot="left-icon">&#xe6d9;</i>
+        <i class="iconfont" slot="right-icon">&#xe93d;</i>
+      </cell>
     </group>
   </div>
 </template>
