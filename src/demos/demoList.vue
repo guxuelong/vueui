@@ -15,19 +15,19 @@
           <i class="iconfont" slot="right-icon">&#xe93d;</i>
         </cell>
         <cell url="/demo/switch" title="switch">
-          <i class="iconfont" slot="left-icon">&#xe62c;</i>
+          <i class="iconfont" slot="left-icon">&#xe629;</i>
           <i class="iconfont" slot="right-icon">&#xe93d;</i>
         </cell>
         <cell url="/demo/card" title="card">
-          <i class="iconfont" slot="left-icon">&#xe62c;</i>
+          <i class="iconfont" slot="left-icon">&#xe93f;</i>
           <i class="iconfont" slot="right-icon">&#xe93d;</i>
         </cell>
         <cell url="/demo/tab" title="tab">
-          <i class="iconfont" slot="left-icon">&#xe62c;</i>
+          <i class="iconfont" slot="left-icon">&#xe60b;</i>
           <i class="iconfont" slot="right-icon">&#xe93d;</i>
         </cell>
         <cell url="/demo/cell" title="cell">
-          <i class="iconfont" slot="left-icon">&#xe62c;</i>
+          <i class="iconfont" slot="left-icon">&#xe665;</i>
           <i class="iconfont" slot="right-icon">&#xe93d;</i>
         </cell>
       </div>
