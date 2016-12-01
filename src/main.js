@@ -10,7 +10,6 @@ import Alert from './demos/alert.vue'
 import Switch from './demos/switch.vue'
 import Card from './demos/card.vue'
 import Tab from './demos/tab.vue'
-import 'element-ui/lib/theme-default/index.css'
 
 const routes = [
   { path: '/', component: Index, name: 'index' },
