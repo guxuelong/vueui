@@ -12,7 +12,8 @@
 </template>
 <script>
 import Group from '../components/Group/index.vue'
-import {Tab, TabItem} from '../../dist/components/tab/index.js'
+import Tab from '../components/Tab/tab.vue'
+import TabItem from '../components/Tab/tab-item.vue'
 
 export default {
   components: {
