@@ -5,7 +5,6 @@
 export default {
   props: {
     text: String,
-    size: String,
     type: String,
     plain: {
       type: Boolean,

@@ -1,21 +1,25 @@
 {
   "name": "vueui-m",
-  "version": "0.0.1",
-  "description": "A Vue.js project",
+  "version": "0.0.2",
+  "description": "Vue.js UI library.",
   "author": "mc <abi.me@qq.com>",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
-    "xbuild": "node build/build-npm.js",
+    "xbuild": "node build/build-npm.js && gulp",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "vue": "^2.0.1",
-    "vue-router": "^2.0.1"
+    "vue": "^2.0.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mengch/vueui.git"
+  },
+  "main": "lib/components/main/index.js",
   "devDependencies": {
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.0.0",
@@ -45,6 +49,9 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "function-bind": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-postcss": "^6.2.0",
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.17.2",
     "inject-loader": "^2.0.1",
@@ -78,6 +85,7 @@
     "url-loader": "^0.5.7",
     "validator": "^6.1.0",
     "vue-loader": "^9.4.0",
+    "vue-router": "^2.0.1",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.3",

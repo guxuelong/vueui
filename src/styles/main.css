@@ -1,4 +1,5 @@
-@import "../assets/fonts/font.css";
+@import "./common/var.css";
+@import "./font/font.css";
 @import "./mixins/line.css";
 @import "./mixins/_button.css";
 @import "m-button.css";

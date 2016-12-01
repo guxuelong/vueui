@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import MBottom from './components/MBottom/index.vue'
+import MBottom from './demos/bottom.vue'
 
 export default {
   name: 'app',

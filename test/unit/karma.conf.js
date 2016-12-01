@@ -36,7 +36,7 @@ webpackConfig.module.preLoaders = webpackConfig.module.preLoaders || []
 webpackConfig.module.preLoaders.unshift({
   test: /\.js$/,
   loader: 'isparta',
-  include: path.resolve(projectRoot, 'src')
+  include: path.resolve(projectRoot, 'src/components')
 })
 
 // only apply babel for test files when using isparta

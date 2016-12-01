@@ -2,7 +2,6 @@ import Alert from '../Alert/index.vue'
 import Card from '../Card/index.vue'
 import Cell from '../Cell/index.vue'
 import Group from '../Group/index.vue'
-import MBottom from '../MBottom/index.vue'
 import MButton from '../MButton/index.vue'
 import MInput from '../MInput/index.vue'
 import Switch from '../Switch/index.vue'
@@ -14,7 +13,6 @@ export {
   Card,
   Cell,
   Group,
-  MBottom,
   MButton,
   MInput,
   Switch,

@@ -1,7 +1,7 @@
 <template>
   <div class="m-cell m-input" >
     <div class="m-input__des">
-      请输入验证码
+      {{title}}
     </div>
     <div class="m-input__warpper">
       <input class="m-input__inner"
@@ -108,6 +108,7 @@ export default {
     blur () {
       this.focused = false
       this.validate()
+      console.log('~~~~~~~~~blur')
     },
     validate () {
       const validator = validators[this.isType]
