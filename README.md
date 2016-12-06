@@ -1,7 +1,9 @@
-# vueui
+# Vue-UI
 
 > Vue.js 2.0 UI Components Library.
-[document](https://github.com/mengch/vueui/blob/master/docs/index.md)
+
+[Document](https://github.com/mengch/vueui/blob/master/docs/index.md)
+
 ## Build Setup
 
 ``` bash
