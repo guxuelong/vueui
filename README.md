@@ -14,6 +14,9 @@ npm run dev
 # build for production with minification
 npm run build
 
+# build for npm publish
+npm run xbuild
+
 # run unit tests
 npm run unit
 
