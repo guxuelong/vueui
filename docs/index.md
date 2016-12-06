@@ -1,5 +1,7 @@
 # Vue组件
 
+[演示](https://github.com/mengch/vueui/blob/master/docs/demos.md)
+
 ##说明
 
 前端开发中，随着业务的增多，出于效率的考虑，我们对于组件化开发的需求也越来越迫切。最近公司也在推行组件化，参考其他的组件库的思路，我用 vue 做了一个组件化的 demo [vueui-m](https://www.npmjs.com/package/vueui-m) 在这里记录下。（目前还不完善，仅作为一个 demo）
