@@ -15,7 +15,8 @@ npm install vueui-m
 
 先从 git clone 本项目，然后在目录下运行以下命令
 
-# install
+# install dependencies
+npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
