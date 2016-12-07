@@ -7,13 +7,11 @@
 ## Build Setup
 
 ``` bash
-通过 npm 安装模块
-
+#通过 npm 安装模块
 npm install vueui-m
 
-从 git 下载运行本示例
-
-先从 git clone 本项目，然后在目录下运行以下命令
+#从 git 下载运行本示例
+#先从 git clone 本项目，然后在目录下运行以下命令
 
 # install dependencies
 npm install
