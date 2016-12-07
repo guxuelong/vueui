@@ -11,7 +11,10 @@
 npm install vueui-m
 
 #从 git 下载运行本示例
-#先从 git clone 本项目，然后在目录下运行以下命令
+git clone https://github.com/mengch/vueui.git
+
+# 切换目录
+cd vueui
 
 # install dependencies
 npm install
